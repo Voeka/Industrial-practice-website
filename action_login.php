@@ -15,7 +15,7 @@ if($query){
         $_SESSION['user']=$res[0];
         header("Location: index.php");
     }else{
-        echo("<script>alert('Неверный логин или пароль!');location.href = `login.html`</script>");
+        echo("<script>alert('Неверный логин или пароль!');location.href = `login.php`</script>");
     }
 }else{
     print_r($db->errorInfo());

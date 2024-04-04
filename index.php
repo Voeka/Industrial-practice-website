@@ -15,15 +15,11 @@ if(empty($_SESSION['list'])){
 
 // unset($_SESSION['list']);
 
-
 if(isset($_POST['gotocard'])){
   $key = $_POST['key'];
   array_push($_SESSION['list'], $items[$key]);
   echo('<script>alert("Вы добавили в корзину!");</script>');
 }
-
-
-
 
 // print_r($items);
 ?>
